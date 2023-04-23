@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#290505"
-    android:backgroundTint="#430B0B"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#290505">
+        android:background="@color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,12 +21,12 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/News"
                 style="@android:style/Widget.Holo.TextView.SpinnerItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="News Flash"
-                android:id="@+id/News"
-                android:textColor="#00EA0B"
+                android:text="Personalized News App"
+                android:textColor="#111111"
                 android:textSize="30sp"
                 android:textStyle="bold|italic">
 
@@ -39,8 +39,7 @@
                 android:layout_alignBottom="@+id/News"
                 android:id="@+id/share"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="170dp"
-                android:layout_marginEnd="13dp"
+
 
                 android:layout_marginBottom="7dp"
                 android:layout_toEndOf="@+id/News"
@@ -60,12 +59,12 @@
         android:layout_height="?attr/actionBarSize"
         android:layout_below="@id/toolbar"
         android:layout_marginTop="2dp"
-        android:background="#290505"
+        android:background="@color/white"
         app:tabIndicatorColor="#74DA1B"
         app:tabIndicatorHeight="3.5dp"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="#74DA1B"
-        app:tabTextColor="#689F38">
+        app:tabTextColor="#000000">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/home"
@@ -95,7 +94,7 @@
             android:id="@+id/science"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sciEnce">
+            android:text="science">
 
         </com.google.android.material.tabs.TabItem>
 
@@ -125,7 +124,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/include"
         android:layout_marginTop="0dp"
-        android:background="#290505">
+        android:background="@color/white">
 
     </androidx.viewpager.widget.ViewPager>
 

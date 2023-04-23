@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#131010"
+        android:background="@color/white"
         android:id="@+id/toolbar">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,8 +21,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="News Flash"
-                android:textColor="#00EA0B"
+                android:text="Personalized News App"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold">
 

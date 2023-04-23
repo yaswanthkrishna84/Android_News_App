@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/news1"
+    android:background="@drawable/img"
 
     tools:context=".SplashActivity">
 
@@ -19,9 +19,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="182dp"
-        android:layout_marginTop="311dp"
+        android:layout_marginTop="510dp"
         android:layout_marginEnd="181dp"
-        android:layout_marginBottom="372dp"
+        android:layout_marginBottom="173dp"
         android:backgroundTint="#7E0505">
 
     </ProgressBar>
