@@ -1,1 +1,1 @@
-# Android_News_App
+# Android News App
