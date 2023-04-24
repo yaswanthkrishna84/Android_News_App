@@ -98,8 +98,8 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-    public void writeNewUser(String username, String password, String email, String phonenumber) {
-        User user = new User(username, password, email, phonenumber);
+    public void writeNewUser(String username, String email, String phonenumber, String password) {
+        User user = new User(username, email, phonenumber, password);
         mDatabase.child("Users").child(username).setValue(user);
     }
 
