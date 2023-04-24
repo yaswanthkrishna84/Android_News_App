@@ -18,11 +18,14 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
     TextView gotoLogin;
-    EditText Email, pass;
+    EditText fullname, Email, phno, pass;
     private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
     /*public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -47,7 +50,9 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
         mAuth = FirebaseAuth.getInstance();
+        fullname = findViewById(R.id.fullname);
         Email = findViewById(R.id.email);
+        phno = findViewById(R.id.phoneno);
         pass = findViewById(R.id.password);
 
         Button btn = findViewById(R.id.Register);
@@ -55,8 +60,15 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 createAccount();
+                String s1 = fullname.getText().toString();
+                String s2 = Email.getText().toString();
+                String s3 = phno.getText().toString();
+                String s4 = pass.getText().toString();
+
+                writeNewUser(s1, s2, s3, s4);
             }
         });
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
     }
 
@@ -82,7 +94,13 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 }
             });
+
         }
+    }
+
+    public void writeNewUser(String username, String password, String email, String phonenumber) {
+        User user = new User(username, password, email, phonenumber);
+        mDatabase.child("Users").child(username).setValue(user);
     }
 
 
