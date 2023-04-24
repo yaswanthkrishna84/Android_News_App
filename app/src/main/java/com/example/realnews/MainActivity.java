@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     TabItem mhome,mscience,mhealth,mtech,mentertainment,msports;
-    ImageView Share;
+    ImageView Logout;
     PagerAdapter pagerAdapter;
     Toolbar mtoolbar;
 
@@ -66,11 +67,13 @@ public class MainActivity extends AppCompatActivity {
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
-        Share=findViewById(R.id.share);
-        Share.setOnClickListener(new View.OnClickListener() {
+        Logout=findViewById(R.id.logout);
+        Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "coming soon", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+                Toast.makeText(MainActivity.this, "Logout Successful", Toast.LENGTH_SHORT).show();
             }
         });
 

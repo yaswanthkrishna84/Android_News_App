@@ -37,15 +37,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="41dp"
                 android:layout_alignBottom="@+id/News"
-                android:id="@+id/share"
+                android:id="@+id/logout"
                 android:layout_alignParentEnd="true"
-
-
                 android:layout_marginBottom="7dp"
                 android:layout_toEndOf="@+id/News"
-                android:src="@drawable/ic_baseline_share_24">
-
+                android:src="@drawable/baseline_logout_24">
             </ImageView>
+
 
 
         </RelativeLayout>

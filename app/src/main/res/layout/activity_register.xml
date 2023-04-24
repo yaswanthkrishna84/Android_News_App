@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/News"
+                style="@android:style/Widget.Holo.TextView.SpinnerItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personalized News App"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold|italic">
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Create New Account"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:hint="Full Name"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullname"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullname"
+            android:layout_marginTop="290dp"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullname"
+            android:layout_marginTop="370dp"
+            android:hint="Phone No"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="480dp"
+            android:backgroundTint="#4D7E4C"
+            android:text="Register"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="550dp"
+            android:text="Already Registered?\nLogin here"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
