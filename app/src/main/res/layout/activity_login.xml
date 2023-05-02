@@ -58,6 +58,16 @@
             android:text="Create New Account"
             android:textSize="17dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contactus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="600dp"
+            android:text="Contact Us!!!"
+            android:textSize="17dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 

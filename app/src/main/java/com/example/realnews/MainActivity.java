@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     TabItem mhome,mscience,mhealth,mtech,mentertainment,msports;

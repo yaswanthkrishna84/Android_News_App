@@ -47,6 +47,20 @@ public class LoginActivity extends AppCompatActivity {
         });
         email1 = findViewById(R.id.loginemail);
         pass1 = findViewById(R.id.loginpassword);
+
+        Button email = (Button) findViewById(R.id.contactus);
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent email = new Intent(Intent.ACTION_SEND);
+                email.setType("message/rfc822");
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"jidugugowrisankar@gmail.com"});
+                email.putExtra(Intent.EXTRA_SUBJECT, "Welcome to CSE");
+                email.putExtra(Intent.EXTRA_TEXT, "Please clear this and enter your issue so that we can have a look");
+                startActivity(Intent.createChooser(email, "Choose Mail App"));
+
+            }
+        });
     }
 
     private void signin() {
